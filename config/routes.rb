@@ -1,4 +1,14 @@
 IdnetRails3Example::Application.routes.draw do
+
+  resources :users
+
+  match 'login' => 'user_session#new'
+  get "user_session/create"
+
+  get "user_session/destroy"
+
+  match '/auth/idnet/callback' => 'user_session#create'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
