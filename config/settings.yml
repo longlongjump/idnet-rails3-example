@@ -1,0 +1,5 @@
+app_id: 4f5e25ed5fc6f0684b000009
+app_secret: 9a7fd5aa5e5b314a0ccc28615df72f1c81e77d715d1d05e87ed791e03a36ae08
+site: http://server.id.heliostech.hk/
+authorize_url: http://server.id.heliostech.hk/oauth/authorize
+access_token_url: http://server.id.heliostech.hk/oauth/token
