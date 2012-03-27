@@ -19,6 +19,7 @@ class UserSessionController < ApplicationController
 
   def destroy
     reset_session
+    redirect_to '/'
   end
 
   protected
