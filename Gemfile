@@ -17,3 +17,6 @@ gem 'jquery-rails'
 
 gem 'omniauth', '>= 1.0.0'
 gem 'omniauth-idnet', :git => 'git://github.com/helios-technologies/omniauth-idnet.git'
+
+gem 'execjs'
+gem 'therubyracer'
