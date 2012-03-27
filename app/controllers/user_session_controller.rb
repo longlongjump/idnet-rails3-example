@@ -12,8 +12,13 @@ class UserSessionController < ApplicationController
     redirect_to @user
   end
 
-  def destroy
+  def failure
+    flash[:notice] = "Fail to register user"
+    redirect_to '/'
+  end
 
+  def destroy
+    reset_session
   end
 
   protected

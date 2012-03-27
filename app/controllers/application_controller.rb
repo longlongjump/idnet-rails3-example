@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
 
   def require_user
     @user = User.where(:id => session[:user_id]).first
-    redirect_to "login" unless @user
-    end
+    redirect_to "/" unless @user
+  end
 end
